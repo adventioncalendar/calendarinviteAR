@@ -26,8 +26,8 @@ def invite():
     start_date = yyyymmdd_utc(now)
     end_date = yyyymmdd_utc(now + timedelta(days=1))
 
-    title = "احصل على فحص فيروس نقص المناعة البشرية الخاص بك"
-    event_description = "يرجى التوجه إلى مركزك الطبي المحلي للحصول على ستة اختبارات ذاتية للكشف عن فيروس نقص المناعة البشرية"
+    title = "قم بإجراء اختبار فيروس نقص المناعة البشرية الذاتي"
+    event_description = "حان الوقت لإجراء اختبار فيروس نقص المناعة البشرية الذاتي"
 
     # Alert 1: day before (either midnight or 9am the day before)
     alarm = request.args.get("alarm", "1day").lower()
@@ -55,7 +55,7 @@ def invite():
         f"DTSTAMP:{dtstamp_utc(now)}",
         f"DTSTART;VALUE=DATE:{start_date}",
         f"DTEND;VALUE=DATE:{end_date}",
-        "RRULE:FREQ=MONTHLY;INTERVAL=6",
+        "RRULE:FREQ=MONTHLY;INTERVAL=1",
         f"SUMMARY:{ics_escape(title)}",
         f"DESCRIPTION:{ics_escape(event_description)}",
 
@@ -89,6 +89,7 @@ def health():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
+
 
 
 
