@@ -34,13 +34,13 @@ def invite():
 
     # 6 different events (each repeats every 6 months; together = monthly forever)
     events_data = [
-        ("احمِ شريكك وقم بإجراء اختبار ذاتي لفيروس نقص المناعة البشرية","معرفة حالتك تساعدك على حماية نفسك وشريكك. إذا غيّرت شريكك أو لديك أي شك، قم بإجراء اختبار ذاتي لفيروس نقص المناعة البشرية اليوم."),
-        ("أكد أي نتيجة تفاعلية بعد احتمال التعرض من خلال الاختبار الذاتي لفيروس نقص المناعة البشرية","بعد علاقة غير محمية أو تمزق الواقي أو مشاركة أدوات الحقن، استخدم اختبارًا ذاتيًا فورًا وقم بتأكيد أي نتيجة إيجابية في مركز صحي."),
-        ("استعد لتجديد وصفة PrEP الربع سنوية من خلال الاختبار الذاتي لفيروس نقص المناعة البشرية","قبل تجديد PrEP، قم بإجراء اختبار ذاتي. الفحص كل 3 أشهر يساعدك على البقاء محميًا وبصحة جيدة."),
-        ("عزز ثقتك في الاستمرار أو إعادة استخدام PrEP/PEP من خلال الاختبار الذاتي لفيروس نقص المناعة البشرية","إذا أوقفت PrEP أو تحتاج إلى PEP، ابدأ باختبار ذاتي. معرفة حالتك تساعدك على اتخاذ القرار الصحيح بسرعة وأمان."),
-        ("تحكم بصحتك من خلال الكشف المبكر باستخدام الاختبار الذاتي لفيروس نقص المناعة البشرية","الكشف المبكر يعني نتائج صحية أفضل. استخدم الاختبار الذاتي بانتظام خاصة إذا كان لديك خطر مستمر."),
-        ("استخدم الاختبار الذاتي كجزء من رعايتك الشخصية بعد التوقف عن PrEP","إذا أخذت استراحة من PrEP وتفكر في إعادة البدء، قم بإجراء اختبار ذاتي للتأكد من حالتك قبل استئناف الاستخدام."),
-    ]
+    ("Protégete a ti y a tu pareja con la auto-prueba del VIH","¿Estás viendo a alguien nuevo o no estás seguro del estado de VIH de tu pareja? Una auto-prueba te ayuda a mantener la confianza y proteger lo que importa. Hacerte pruebas regularmente te permite mantener el control de tu salud y apoya la prevención."),
+("Confirma tu estado de VIH después de una posible exposición: utiliza una auto-prueba ahora","¿Tuviste relaciones sin protección o se rompió el preservativo? Hazte una auto-prueba de VIH lo antes posible. Si la exposición fue dentro de las últimas 72 horas, busca PEP inmediatamente. Actuar temprano te ayuda a mantenerte protegido e informado."),
+("Prepárate para renovar tu PrEP trimestral con una auto-prueba del VIH","¿Estás en PrEP o continuando con la prevención? Si tomas PrEP oral diaria, hazte una auto-prueba al menos cada 3 meses. Las pruebas regulares mantienen tu rutina de PrEP segura, efectiva y en buen camino."),
+("Ten confianza mientras usas o al reiniciar la PrEP haciéndote una auto-prueba del VIH","¿Has pausado o estás pensando en reiniciar? Antes de comenzar de nuevo, confirma tu estado VIH negativo con una auto-prueba. Las pruebas regulares te protegen y mantienen tu plan de prevención funcionando."),
+("Toma el control de tu salud haciéndote una auto-prueba del VIH ahora","Sentirse saludable no siempre significa estar libre de VIH. Muchas personas no presentan síntomas tempranos. Una auto-prueba te brinda claridad, confianza y control sobre tu estado."),
+("Haz que la auto-prueba del VIH sea parte de tu atención personalizada después de una pausa en la PrEP","¿No recuerdas cuándo fue tu última prueba? Ahora es un buen momento para hacerte una auto-prueba. Las pruebas regulares te ayudan a detectar a tiempo y mantenerte seguro en tu camino de prevención.")
+]
 
     # Alerts:
     # - Day before: midnight the day before (relative to all-day start at 00:00)
